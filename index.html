@@ -827,6 +827,31 @@
   footer a.wa-btn{color:#FFFFFF; font-size:0.88rem;}
   .mail-link{color:var(--ink); text-decoration:underline; text-underline-offset:3px; font-weight:600;}
   .mail-link:hover{color:var(--purple);}
+
+/* Partner Zenita */
+.zenita{background:var(--paper); padding:90px 0;}
+.zen-head{display:flex; justify-content:space-between; align-items:flex-end; gap:24px; margin-bottom:32px;}
+.zen-head h2{font-size:clamp(1.6rem,3vw,2.3rem); margin:0 0 12px;}
+.zen-head p{max-width:560px; color:#4a4857;}
+.zen-actions{display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:20px;}
+.zen-code{display:inline-flex; align-items:center; gap:12px; border:2px dashed var(--purple); background:#fff; border-radius:999px; padding:10px 20px; cursor:pointer; font-family:var(--font-display); font-weight:700; color:var(--ink);}
+.zen-code em{font-style:normal; font-family:var(--font-body); font-weight:500; font-size:0.8rem; color:var(--purple);}
+.zen-nav{display:flex; gap:10px; flex-shrink:0;}
+.zen-nav button{width:48px; height:48px; border-radius:50%; border:1px solid var(--line-soft); background:#fff; font-size:1.2rem; cursor:pointer; color:var(--ink);}
+.zen-nav button:hover{background:var(--purple); color:#fff; border-color:var(--purple);}
+.zen-track{display:flex; gap:20px; overflow-x:auto; scroll-snap-type:x mandatory; padding:4px 2px 18px; scrollbar-width:thin; -webkit-overflow-scrolling:touch;}
+.zen-card{flex:0 0 280px; scroll-snap-align:start; background:#fff; border:1px solid var(--line-soft); border-radius:20px; overflow:hidden; text-decoration:none; color:var(--ink); display:flex; flex-direction:column; transition:transform .2s, box-shadow .2s;}
+.zen-card:hover{transform:translateY(-4px); box-shadow:0 14px 30px rgba(11,10,16,0.12);}
+.zen-img{aspect-ratio:1/1; background:#fff; display:flex; align-items:center; justify-content:center; padding:18px;}
+.zen-img img{max-width:100%; max-height:100%; object-fit:contain;}
+.zen-body{padding:18px 20px 22px; display:flex; flex-direction:column; gap:8px; flex:1;}
+.zen-body h3{font-size:1.05rem; margin:0;}
+.zen-body p{font-size:0.88rem; color:#4a4857; margin:0; flex:1;}
+.zen-price{font-family:var(--font-display); font-weight:700; color:var(--purple);}
+.zen-var{display:flex; flex-wrap:wrap; gap:6px; align-items:center;}
+.zen-size{font-size:0.78rem; font-weight:600; color:#4a4857; margin-right:4px;}
+.zen-chip{font-size:0.75rem; font-weight:600; padding:4px 10px; border-radius:999px; background:var(--paper); border:1px solid var(--line-soft); color:var(--ink);}
+@media (max-width:700px){.zen-head{flex-direction:column; align-items:flex-start;} .zen-nav{display:none;} .zen-card{flex-basis:78%;}}
 </style>
 </head>
 <body>
@@ -854,7 +879,7 @@
       <a href="#preise">Mitgliedschaft</a>
       <a href="#standort">Studio</a>
     </nav>
-    <a href="https://wa.me/41798456913?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20ein%20gratis%20Probetraining%20vereinbaren.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-aqua">Gratis Probetraining</a>
+    <a href="https://wa.me/41798880707?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20ein%20gratis%20Probetraining%20vereinbaren.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-aqua">Gratis Probetraining</a>
     <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -886,7 +911,7 @@
     <div class="benefits-top">
       <h2>Ein Studio mit allem, was wirklich zählt.</h2>
       <div class="benefits-stat">
-        <b>über 500 m²</b>
+        <b>über 750 m²</b>
         <span>Trainingsfläche in Balsthal</span>
       </div>
     </div>
@@ -898,7 +923,7 @@
       </div>
       <div class="benefit-item">
         <svg viewBox="0 0 32 32" fill="none" stroke="#E3E6EA" stroke-width="2.2"><circle cx="16" cy="12" r="6"/><path d="M6 27 c0 -7 20 -7 20 0"/></svg>
-        <h3>Women's Bereich</h3>
+        <h3>Frauenbereich</h3>
         <p>Eigener Bereich mit frauenspezifischen Geräten.</p>
       </div>
       <div class="benefit-item">
@@ -922,7 +947,7 @@
       <h2>Allein trainieren heisst nicht, allein gelassen zu werden.</h2>
       <p>Zwei Coaches stehen dir zur Seite — für Technikfragen, einen individuellen Trainingsplan oder feste Personal-Training-Termine. Termine nach Absprache.</p>
       <div class="hero-actions">
-        <a href="https://wa.me/41798456913?text=Hallo%20Apex%20Fitness%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Coaching%20und%20m%C3%B6chte%20mehr%20erfahren.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-purple" style="background:var(--ink);">Coaching anfragen</a>
+        <a href="https://wa.me/41798880707?text=Hallo%20Apex%20Fitness%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Coaching%20und%20m%C3%B6chte%20mehr%20erfahren.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-purple" style="background:var(--ink);">Coaching anfragen</a>
       </div>
     </div>
     <div class="coach-figure coach-list">
@@ -951,7 +976,7 @@
     <div class="gym-head">
       <p class="eyebrow">Rundgang</p>
       <h2>Dein Gym in Balsthal.</h2>
-      <p>Über 500 m² Trainingsfläche, hell und klimatisiert — von der Kraftstation bis zur Stretch-Zone. Wirf einen Blick hinein, bevor du das erste Mal vorbeikommst.</p>
+      <p>Über 750 m² Trainingsfläche, hell und klimatisiert — von der Kraftstation bis zur Stretchbereich. Wirf einen Blick hinein, bevor du das erste Mal vorbeikommst.</p>
     </div>
     <div class="gym-gallery">
       <!-- TODO: Platzhalter durch echte Fotos ersetzen, z.B. <img src="foto1.jpg" alt="Kraftraum"> statt <svg>... -->
@@ -961,15 +986,11 @@
       </div>
       <div class="gym-photo">
         <svg viewBox="0 0 32 32" fill="none" stroke="#E3E6EA" stroke-width="2"><circle cx="16" cy="16" r="13"/><path d="M16 9 v7 l5 3"/></svg>
-        <span>Cardio-Bereich</span>
+        <span>Kardio &amp; Crossfit</span>
       </div>
-      <div class="gym-photo tall">
+      <div class="gym-photo">
         <svg viewBox="0 0 32 32" fill="none" stroke="#E3E6EA" stroke-width="2"><circle cx="16" cy="12" r="6"/><path d="M6 27 c0 -7 20 -7 20 0"/></svg>
-        <span>Women's Bereich</span>
-      </div>
-      <div class="gym-photo wide">
-        <svg viewBox="0 0 32 32" fill="none" stroke="#E3E6EA" stroke-width="2"><path d="M16 4 l11 4 v9 c0 7 -5 10 -11 11 c-6 -1 -11 -4 -11 -11 v-9 z"/></svg>
-        <span>Stretch & Pump Zone</span>
+        <span>Frauen- &amp; Stretchbereich</span>
       </div>
       <div class="gym-photo wide">
         <svg viewBox="0 0 32 32" fill="none" stroke="#E3E6EA" stroke-width="2"><rect x="4" y="8" width="24" height="16" rx="2"/><path d="M4 12 h24"/></svg>
@@ -979,7 +1000,7 @@
     <div class="gym-highlights">
       <div class="gym-highlight">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13 l4 4 L19 7"/></svg>
-        <span>Über 500 m² Trainingsfläche</span>
+        <span>Über 750 m² Trainingsfläche</span>
       </div>
       <div class="gym-highlight">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13 l4 4 L19 7"/></svg>
@@ -987,7 +1008,7 @@
       </div>
       <div class="gym-highlight">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13 l4 4 L19 7"/></svg>
-        <span>Eigener Women's Bereich</span>
+        <span>Eigener Frauenbereich</span>
       </div>
       <div class="gym-highlight">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13 l4 4 L19 7"/></svg>
@@ -1013,7 +1034,7 @@
           <li>Inklusive 2 Trainingspläne</li>
           <li>Raten möglich</li>
         </ul>
-        <a href="https://wa.me/41798456913?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20das%20Jahresabo%20%28CHF%20649.%E2%80%93%29%20abschliessen.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-aqua">Wählen</a>
+        <a href="https://wa.me/41798880707?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20das%20Jahresabo%20%28CHF%20649.%E2%80%93%29%20abschliessen.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-aqua">Wählen</a>
       </div>
       <div class="step-card price-card-light">
         <h3>Paarabo 12 Monate</h3>
@@ -1023,7 +1044,7 @@
           <li>Inklusive 2 Trainingspläne pro Person</li>
           <li>Raten möglich</li>
         </ul>
-        <a href="https://wa.me/41798456913?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20das%20Paarabo%2012%20Monate%20%28CHF%201%27199.%E2%80%93%29%20f%C3%BCr%202%20Personen%20abschliessen.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-outline">Wählen</a>
+        <a href="https://wa.me/41798880707?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20das%20Paarabo%2012%20Monate%20%28CHF%201%27199.%E2%80%93%29%20f%C3%BCr%202%20Personen%20abschliessen.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-outline">Wählen</a>
       </div>
       <div class="step-card price-card-light">
         <h3>Monatsabo</h3>
@@ -1033,7 +1054,7 @@
           <li>Trainingsplan optional (+ CHF 30.–)</li>
           <li>Keine Raten</li>
         </ul>
-        <a href="https://wa.me/41798456913?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20das%20Monatsabo%20%28CHF%2099.%E2%80%93%29%20abschliessen.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-outline">Wählen</a>
+        <a href="https://wa.me/41798880707?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20das%20Monatsabo%20%28CHF%2099.%E2%80%93%29%20abschliessen.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-outline">Wählen</a>
       </div>
       <div class="step-card price-card-light">
         <h3>6-Monats-Abo</h3>
@@ -1043,7 +1064,7 @@
           <li>Inklusive 1 Trainingsplan</li>
           <li>Raten möglich</li>
         </ul>
-        <a href="https://wa.me/41798456913?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20das%206-Monats-Abo%20%28CHF%20419.%E2%80%93%29%20abschliessen.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-outline">Wählen</a>
+        <a href="https://wa.me/41798880707?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20das%206-Monats-Abo%20%28CHF%20419.%E2%80%93%29%20abschliessen.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-outline">Wählen</a>
       </div>
     </div>
     <div class="abo-more">
@@ -1072,7 +1093,7 @@
           <li>Inklusive 2 Trainingspläne</li>
           <li>Raten möglich</li>
         </ul>
-        <a href="https://wa.me/41798456913?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20das%20Jahresabo%20%28CHF%20649.%E2%80%93%29%20abschliessen.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-aqua">Wählen</a>
+        <a href="https://wa.me/41798880707?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20das%20Jahresabo%20%28CHF%20649.%E2%80%93%29%20abschliessen.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-aqua">Wählen</a>
       </div>
       <div class="step-card price-card-light">
         <h3>6-Monats-Abo</h3>
@@ -1082,7 +1103,7 @@
           <li>Inklusive 1 Trainingsplan</li>
           <li>Raten möglich</li>
         </ul>
-        <a href="https://wa.me/41798456913?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20das%206-Monats-Abo%20%28CHF%20419.%E2%80%93%29%20abschliessen.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-outline">Wählen</a>
+        <a href="https://wa.me/41798880707?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20das%206-Monats-Abo%20%28CHF%20419.%E2%80%93%29%20abschliessen.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-outline">Wählen</a>
       </div>
       <div class="step-card price-card-light">
         <h3>3-Monats-Abo</h3>
@@ -1092,7 +1113,7 @@
           <li>Trainingsplan optional (+ CHF 30.–)</li>
           <li>Keine Raten</li>
         </ul>
-        <a href="https://wa.me/41798456913?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20das%203-Monats-Abo%20%28CHF%20249.%E2%80%93%29%20abschliessen.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-outline">Wählen</a>
+        <a href="https://wa.me/41798880707?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20das%203-Monats-Abo%20%28CHF%20249.%E2%80%93%29%20abschliessen.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-outline">Wählen</a>
       </div>
       <div class="step-card price-card-light">
         <h3>Monatsabo</h3>
@@ -1102,7 +1123,7 @@
           <li>Trainingsplan optional (+ CHF 30.–)</li>
           <li>Keine Raten</li>
         </ul>
-        <a href="https://wa.me/41798456913?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20das%20Monatsabo%20%28CHF%2099.%E2%80%93%29%20abschliessen.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-outline">Wählen</a>
+        <a href="https://wa.me/41798880707?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20das%20Monatsabo%20%28CHF%2099.%E2%80%93%29%20abschliessen.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-outline">Wählen</a>
       </div>
     </div>
     <h3 class="abo-group">Paar-Abos</h3>
@@ -1115,7 +1136,7 @@
           <li>Inklusive 2 Trainingspläne pro Person</li>
           <li>Raten möglich</li>
         </ul>
-        <a href="https://wa.me/41798456913?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20das%20Paarabo%2012%20Monate%20%28CHF%201%27199.%E2%80%93%29%20f%C3%BCr%202%20Personen%20abschliessen.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-outline">Wählen</a>
+        <a href="https://wa.me/41798880707?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20das%20Paarabo%2012%20Monate%20%28CHF%201%27199.%E2%80%93%29%20f%C3%BCr%202%20Personen%20abschliessen.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-outline">Wählen</a>
       </div>
       <div class="step-card price-card-light">
         <h3>Paarabo 6 Monate</h3>
@@ -1125,7 +1146,7 @@
           <li>Inklusive 1 Trainingsplan pro Person</li>
           <li>Raten möglich</li>
         </ul>
-        <a href="https://wa.me/41798456913?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20das%20Paarabo%206%20Monate%20%28CHF%20699.%E2%80%93%29%20f%C3%BCr%202%20Personen%20abschliessen.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-outline">Wählen</a>
+        <a href="https://wa.me/41798880707?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20das%20Paarabo%206%20Monate%20%28CHF%20699.%E2%80%93%29%20f%C3%BCr%202%20Personen%20abschliessen.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-outline">Wählen</a>
       </div>
     </div>
   </div>
@@ -1156,6 +1177,48 @@
   </div>
 </section>
 
+<section class="zenita" id="partner">
+  <div class="wrap">
+    <div class="zen-head">
+      <div>
+        <p class="eyebrow">Unser Partner</p>
+        <h2>Zenita – Supplements für dein Training.</h2>
+        <p>Mit dem Gutscheincode <b>Apex10</b> erhältst du als Apex-Mitglied <b>10&nbsp;% Rabatt</b> auf alle Produkte.</p>
+        <div class="zen-actions">
+          <button type="button" class="zen-code" id="zenCode" aria-label="Gutscheincode Apex10 kopieren"><span>Apex10</span><em>Code kopieren</em></button>
+          <a class="pill pill-purple" href="https://zenita.ch/collections/all" target="_blank" rel="noopener">Zum Shop</a>
+        </div>
+      </div>
+      <div class="zen-nav">
+        <button type="button" id="zenPrev" aria-label="Zurück">&#8592;</button>
+        <button type="button" id="zenNext" aria-label="Weiter">&#8594;</button>
+      </div>
+    </div>
+    <div class="zen-track" id="zenTrack">
+        <a class="zen-card" href="https://zenita.ch/collections/all/products/essential" target="_blank" rel="noopener">
+          <div class="zen-img"><img src="https://zenita.ch/cdn/shop/files/Essential_Tropic_Fresh_XL.png?v=1775490256&width=600" alt="Essential+" loading="lazy"></div>
+          <div class="zen-body"><h3>Essential+</h3><div class="zen-var"><span class="zen-size">750 g · 50 Portionen</span><span class="zen-chip">Tropic Fresh</span><span class="zen-chip">Cola Crisp</span></div><p>Der tägliche All-in-One-Drink: alle neun essenziellen Aminosäuren plus Creapure® Kreatin.</p><span class="zen-price">CHF 52.90</span></div>
+        </a>
+        <a class="zen-card" href="https://zenita.ch/collections/all/products/synergy-protein" target="_blank" rel="noopener">
+          <div class="zen-img"><img src="https://zenita.ch/cdn/shop/files/Synergy_Protein_Sweet_Sunset_XXL.png?v=1775490266&width=600" alt="Synergy Protein" loading="lazy"></div>
+          <div class="zen-body"><h3>Synergy Protein</h3><div class="zen-var"><span class="zen-size">1,2 kg · 40 Portionen</span><span class="zen-chip">Sweet Sunset</span><span class="zen-chip">Citrus Gelato</span></div><p>Proteinpulver aus ca. 60 % Whey und 40 % Casein – schnelle und langanhaltende Versorgung. 1,2 kg.</p><span class="zen-price">CHF 47.90</span></div>
+        </a>
+        <a class="zen-card" href="https://zenita.ch/collections/all/products/omega-3-pro" target="_blank" rel="noopener">
+          <div class="zen-img"><img src="https://zenita.ch/cdn/shop/files/Omega-3_Pro_M.jpg?v=1775467478&width=600" alt="Omega-3 Pro" loading="lazy"></div>
+          <div class="zen-body"><h3>Omega-3 Pro</h3><div class="zen-var"><span class="zen-size">180 Weichkapseln</span></div><p>Hochdosiertes Fischöl in Softgel-Kapseln mit 750 mg EPA und DHA pro Kapsel.</p><span class="zen-price">CHF 37.90</span></div>
+        </a>
+        <a class="zen-card" href="https://zenita.ch/collections/all/products/essential-probe" target="_blank" rel="noopener">
+          <div class="zen-img"><img src="https://zenita.ch/cdn/shop/files/Essential_Tropic_Fresh_S.png?v=1775490183&width=600" alt="Essential+ Probe" loading="lazy"></div>
+          <div class="zen-body"><h3>Essential+ Probe</h3><div class="zen-var"><span class="zen-size">15 g · 1 Portion</span><span class="zen-chip">Tropic Fresh</span></div><p>Zum Ausprobieren: Essential+ als Probepackung.</p><span class="zen-price">CHF 1.90</span></div>
+        </a>
+        <a class="zen-card" href="https://zenita.ch/collections/all/products/synergy-protein-probe" target="_blank" rel="noopener">
+          <div class="zen-img"><img src="https://zenita.ch/cdn/shop/files/Synergy_Protein_Sweet_Sunset_S.png?v=1775490169&width=600" alt="Synergy Protein Probe" loading="lazy"></div>
+          <div class="zen-body"><h3>Synergy Protein Probe</h3><div class="zen-var"><span class="zen-size">30 g · 1 Portion</span><span class="zen-chip">Sweet Sunset</span></div><p>Zum Ausprobieren: Synergy Protein als Probepackung.</p><span class="zen-price">CHF 2.20</span></div>
+        </a>
+    </div>
+  </div>
+</section>
+
 <section class="location" id="standort">
   <div class="wrap">
     <div>
@@ -1176,7 +1239,7 @@
         </div>
         <div>
           <strong>Kontakt</strong>
-          <span><a class="wa-btn" href="https://wa.me/41798456913" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.5-4A8 8 0 1 1 20 11.5z"/><path d="M9 9.5c.3 2 2.5 4.2 5 5l1.2-1.2-1.8-1-.8.6c-.8-.4-1.6-1.2-2-2l.6-.8-1-1.8z"/></svg>Per WhatsApp schreiben</a><br><a class="mail-link" href="mailto:info@apex-fitness.ch">info@apex-fitness.ch</a></span>
+          <span><a class="wa-btn" href="https://wa.me/41798880707" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.5-4A8 8 0 1 1 20 11.5z"/><path d="M9 9.5c.3 2 2.5 4.2 5 5l1.2-1.2-1.8-1-.8.6c-.8-.4-1.6-1.2-2-2l.6-.8-1-1.8z"/></svg>Per WhatsApp schreiben</a><br><a class="mail-link" href="mailto:info@apexfitness.ch">info@apexfitness.ch</a></span>
         </div>
       </div>
     </div>
@@ -1197,7 +1260,7 @@
     <h2>Dein erstes Training geht auf uns.</h2>
     <p>Chip abholen, jederzeit rein. Unverbindlich, ohne Verkaufsgespräch.</p>
     <div class="hero-actions">
-      <a href="https://wa.me/41798456913?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20Mitglied%20werden.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-aqua">Mitglied werden</a>
+      <a href="https://wa.me/41798880707?text=Hallo%20Apex%20Fitness%2C%20ich%20m%C3%B6chte%20Mitglied%20werden.%20Bitte%20um%20R%C3%BCckmeldung.%20Mein%20Name%3A%20" target="_blank" rel="noopener" class="pill pill-aqua">Mitglied werden</a>
     </div>
     <p class="fine-print">Gültig für neue Mitglieder von Apex Fitness GmbH, Balsthal. Es gelten die Vertragsbedingungen.</p>
   </div>
@@ -1233,7 +1296,7 @@
         <ul>
           <li>Sagmattstrasse 4</li>
           <li>4710 Balsthal</li>
-          <li><a class="wa-btn" href="https://wa.me/41798456913" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.5-4A8 8 0 1 1 20 11.5z"/><path d="M9 9.5c.3 2 2.5 4.2 5 5l1.2-1.2-1.8-1-.8.6c-.8-.4-1.6-1.2-2-2l.6-.8-1-1.8z"/></svg>WhatsApp</a></li>
+          <li><a class="wa-btn" href="https://wa.me/41798880707" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.5-4A8 8 0 1 1 20 11.5z"/><path d="M9 9.5c.3 2 2.5 4.2 5 5l1.2-1.2-1.8-1-.8.6c-.8-.4-1.6-1.2-2-2l.6-.8-1-1.8z"/></svg>WhatsApp</a></li>
         </ul>
       </div>
     </div>
@@ -1317,6 +1380,21 @@
     window.addEventListener('hashchange', route);
     if(location.hash==='#alle-abos'){ route(true); }
   })();
+</script>
+
+<script>
+(function(){
+  var tr=document.getElementById('zenTrack'); if(!tr) return;
+  function step(d){tr.scrollBy({left:d*300,behavior:'smooth'});}
+  document.getElementById('zenPrev').addEventListener('click',function(){step(-1);});
+  document.getElementById('zenNext').addEventListener('click',function(){step(1);});
+  var c=document.getElementById('zenCode');
+  c.addEventListener('click',function(){
+    var l=c.querySelector('em');
+    function ok(){l.textContent='Kopiert ✓'; setTimeout(function(){l.textContent='Code kopieren';},1800);}
+    try{navigator.clipboard.writeText('Apex10').then(ok,ok);}catch(e){ok();}
+  });
+})();
 </script>
 </body>
 </html>
